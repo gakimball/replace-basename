@@ -1,0 +1,28 @@
+{
+  "name": "replace-basename",
+  "version": "1.0.0",
+  "description": "Replace the basename of a path",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gakimball/replace-basename.git"
+  },
+  "keywords": [
+    "path",
+    "basename",
+    "replace"
+  ],
+  "author": "Geoff Kimball <geoff@geoffkimball.com> (http://geoffkimball.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gakimball/replace-basename/issues"
+  },
+  "homepage": "https://github.com/gakimball/replace-basename#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.0"
+  }
+}
