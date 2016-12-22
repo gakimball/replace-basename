@@ -10,8 +10,8 @@ describe('replace()', function() {
     expect(replace('/path/to/puppers.puppers', 'doggos')).to.equal('/path/to/doggos.puppers');
   });
 
-  it('can accept a function as the second parameter', () => {
-    var fn = function(path) {
+  it('can accept a function as the second parameter', function() {
+    function fn(path) {
       return 'sub' + path;
     }
 
