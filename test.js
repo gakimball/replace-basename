@@ -9,4 +9,12 @@ describe('replace()', function() {
   it('is not confused by weird extensions', function() {
     expect(replace('/path/to/puppers.puppers', 'doggos')).to.equal('/path/to/doggos.puppers');
   });
+
+  it('can accept a function as the second parameter', () => {
+    var fn = function(path) {
+      return 'sub' + path;
+    }
+
+    expect(replace('/path/to/woofers.mp4', fn)).to.equal('/path/to/subwoofers.mp4');
+  });
 });

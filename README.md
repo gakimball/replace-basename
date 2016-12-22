@@ -17,6 +17,11 @@ import replaceBasename from 'replace-basename';
 
 replaceBasename('/path/to/puppers.mov', 'doggos');
 // => '/path/to/doggos.mov'
+
+replaceBasename('/path/to/woofers.mp4', function(path) {
+  return 'sub' + path;
+})
+// => '/path/to/subwoofers.mp4'
 ```
 
 ## Local Development
